@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, serif, arial;
+    background-color: #00796b;
+}
+
+#survey-form {
+    width: 50%;
+    max-width: 960px;
+    margin-top:      0;
+    margin-bottom:  2em;
+    margin-right:  auto;
+    margin-left:   auto;
+    padding: 0 2em;
+    background-color: white;
+}
+
+.wrapper {
+    padding: 0;
+    margin: 0; 
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: .6em 0;
+}
+
+.form-row > label {
+    flex: 1 1 100px;
+    text-align: right;
+    padding-right:   .5em;
+    padding-left:    .5em;
+    padding-bottom:  .5em;
+}
+
+.list-label,
+.textbox-label {
+    align-self: flex-start;
+}
+
+.form-row > :nth-child(2) {flex: 2 1 200px;}
+
+.form-row input,
+.form-row textarea {
+    padding: .8em .6em;
+}
+
+.list {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin:  0;
+}
+
+.list li label {
+    padding-left: .5em;
+}
+
+.dropdown{
+    padding: .5em;
+}
+
+h1 {
+    font-size: 3em;
+    padding: .4em 1rem;
+}
+
+p {
+    padding: .5em 1rem;
+    color: rgba(255, 255, 255, .9);
+}
+
+h1, 
+p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    font-family: Roboto, serif, arial;
+    font-size: 100%;
+    min-width: 4em;
+    height: 2.25em;
+    background-color: white;
+    border: 1px solid black;
+    border-style: outset;
+    text-shadow: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: 250ms all ease-out;
+}
+
+button:hover {
+    background-color: #00796b;
+    color: #fff;
+}
+
+.required {
+    color: rgb(206, 22, 22);
+    font-size: .8em;
+    vertical-align: super;
+}
+header {background-color: #004c40}
+
+@media (max-width: 555px){
+    #survey-form {width: 50%;}
+    
+    .form-row > label {
+        width: 100%;
+    }
+
+    .form-row > :nth-child(2) {flex: 2 1 100%;}
+}
+
+@media (max-width: 542px) {
+    #survey-form {width: 271px;}
+}
+
+@media (max-width: 727px) {
+    .form-row > label {
+        width: 100%;
+        text-align: left;
+    }
+}

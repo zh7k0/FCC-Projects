@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|PT+Mono');
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto, sans, arial;
+    line-height: 1.5;
+    min-width: 300px;
+}
+
+/*Hamburger styles*/
+.menu-toggle {
+    display: block;
+    position: fixed;
+    top:   15px;
+    left:  15px;
+    width: 33px;
+    z-index: 0;
+    opacity: .5;
+}
+
+.hamburger {
+    display: block;
+    width:  33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: #cdcdcd;
+    border-radius: 3px;
+}
+
+/*Hamburger adjusted to menu opened*/
+.menu-toggle-open {
+    position: relative;
+}
+
+/*Navigation bar styling*/
+.navbar {
+    position: fixed;
+    top:     0;
+    left:   -500px;
+    z-index: 1;
+    height: 100vh;
+    background: black;
+    transition: left 500ms ease-out;
+}
+
+.navbar header {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.main-nav {
+    padding-left:   0;
+    margin:         0;
+}
+
+.nav-link {
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid grey;
+    padding: .5em .75em; 
+}
+
+.nav-link:last-child {
+    border-bottom: 1px solid grey;
+}
+
+.nav-link:hover {
+    color: #cdcdcd;
+}
+
+/*off-canvas navbar styling*/
+.navbar:target {
+    left: 0;
+}
+
+.navbar:target .backdrop {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: -1;
+}
+
+/* Main Content Styling*/
+.main-doc {
+    width: 100%;
+    margin: 0;
+}
+
+.main-section {
+    width: 90%;
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+header {
+    font-size: 2.125rem;
+    line-height: 1;
+    letter-spacing: 0.015rem;
+    margin: 1em auto;
+}
+
+article li {
+    margin-left: 1em;
+}
+
+article li,
+article p {
+    letter-spacing: 0.031rem;
+}
+
+code {
+    display: block;
+    font-family: 'PT Mono', monospace;
+    font-size: .75em;
+    white-space: pre;
+    text-align: left;
+    overflow: auto;
+    background-color: rgba(128, 128, 128, 0.2);
+    margin:  .5rem;
+    padding: .5rem 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+    .navbar:target .backdrop {display: none;}
+
+    .navbar {
+        left: 0;
+        max-width: 18em;
+    }
+
+    .main-doc {
+        width: calc(100% - 18em);
+        margin-left: 15em;
+        transition: margin-left 500ms ease-in-out;
+    }
+    
+}

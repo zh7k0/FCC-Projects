@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Marck+Script|Open+Sans|Spectral');
+body {
+    background-image: url("https://i.ytimg.com/vi/2XZxPNOVBEQ/maxresdefault.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', Helvetica, monospace, sans-serif, arial;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: #a7afb2;
+    line-height: 1.5;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header   quote1"
+        "sidecont content"
+        "quote2    video"
+        "footer   footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 20vh minmax(80vh, auto) 1fr minmax(50px, auto);    
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* grid-template-rows: repeat(auto-fit, minmax(auto, 1fr)); */
+    grid-auto-flow: row;
+    grid-gap: 10px 20px;
+}
+.grid2 section:nth-child(odd) {
+    align-self: start;
+}
+.grid2 section:nth-child(even) {
+    align-self: end;
+}
+.quotes {
+    font-family: 'Spectral', cursive, sans-serif;
+    font-size: 1.2vw;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.2;
+    color: black;
+    padding: 35px;
+    align-self: center;
+}
+.quotes span {
+    font-size: 1.5em;
+}
+.quote-text {
+    text-align: left;
+}
+.quote-author {
+    text-align: right;
+}
+#main {
+    width: 100%;
+    height: auto;
+}
+#title {
+    grid-area: header;
+    font-family: 'Great Vibes', cursive;
+    color: rgb(2, 2, 2);
+    text-shadow: 2px 3px 6px #a7afb2;
+}
+#title h1{
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 800;
+    border-bottom:  2px  solid rgb(2, 2, 2);
+    padding: 0 10px;
+}
+#img-div {
+    grid-area: sidecont;
+    align-self: center;
+}
+#img-div figcaption {
+    text-align: center;
+}
+#image-container {
+    clip-path: ellipse(50% 50% at center);
+    margin-bottom: 10px;
+}
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: all 1s ease-in-out;
+}
+#image:hover {
+    overflow: hidden;
+    transform: scale(1.05);
+}
+#tribute-info {
+    grid-area: content;
+    padding: 30px;
+    font-size: 1.2em;
+}
+#background-content {
+    grid-area: 2/1/3/3;
+    background-color: black;
+    background-image: url("https://i.imgur.com/aWnSEGy.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#quote1 {
+    grid-area: quote1;
+    color: white;
+}
+#quote2 {
+    grid-area: quote2;
+    font-size: 2em;
+    padding: 50px;
+}
+section {
+    font-size: .8em;
+}
+#video-section{
+    grid-area: video;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+}
+#video-section p{
+    flex-grow: 0;
+    flex-shrink: 2;
+    flex-basis: 30vw;
+    padding: 10px;
+    text-align: right;
+    line-height: 1;
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: rgb(98, 100, 98); 
+}
+#video-section iframe {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 560px;
+}
+#main footer {
+    grid-area: footer;
+    background-color: #767a7aa8;
+    color: aliceblue;
+    padding: 5px 20px;
+    text-align: center;
+}
+#main footer a {
+    text-decoration: none;
+    color: inherit;
+}
+#main footer a:hover{
+    color: rgb(139, 68, 68);
+}

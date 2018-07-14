@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Old Spice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing_page.css" />
+</head>
+<body>
+    <header id="header">
+        <figure>
+            <img  id="header-img" src="https://static1.squarespace.com/static/55dce644e4b07360409c96f5/t/560e0d19e4b08da6eb81e25a/1443761433923/" alt="Old Spice Logo">
+        </figure>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#commercials">Commercials</a>
+            <a class="nav-link" href="#discount">Get Discount</a>
+            <a class="nav-link" href="#products">Pick your poison</a>
+            <a class="nav-link" href="#shop">About</a>
+        </nav>  
+    </header>
+
+    <main class="container">
+        <section id="commercials">
+            <h1>Check our products</h1>
+            <div id="videos">
+                <div class="video-container"><iframe id="video" src="https://www.youtube.com/embed/owGykVbfgUE" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/Wt7sCW9_DOc" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/WZVu7hKtViI" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            </div>
+        </section>
+    
+        <section id="discount">
+            <h1>Want a discount for you next purchase?</h1>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <label for="email">Enter your email:</label>
+                <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                <input class="button" type="submit" id="submit" value="Grab it!">
+            </form>
+        </section>
+
+        <section id="products">
+            <h1>Pick your poison</h1>
+            <div class="product">
+                <img src="https://azcdn.titan.pgsitecore.com/en/-/media/OldSpice/Images/Callouts/9/Pick%20Your%20Scent%20-%20desktop/HardestWorking_940x320_80316.jpg?h=320&la=en&w=940&v=1-201705310641" alt="Workout collection banner">
+                <h2>Workout</h2>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+                <button class="button" type="button">Visit</button>
+            </div>
+            <div class="product">
+                <img src="https://azcdn.titan.pgsitecore.com/en/-/media/OldSpice/Images/Callouts/9/Pick%20Your%20Scent%20-%20desktop/RedZone_940x320F_RX_80316.jpg?h=320&la=en&w=940&v=1-201705310641" alt="Daily use collection banner">
+                <h2>Daily Use</h2>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+                <button class="button" type="button">Visit</button>
+            </div>
+            <div class="product">
+                <img src="https://azcdn.titan.pgsitecore.com/en/-/media/OldSpice/Images/Callouts/9/Pick%20Your%20Scent%20-%20desktop/WildCollection_940x320_80316.jpg?h=320&la=en&w=940&v=1-201705310641" alt="Outdoor collection banner">
+                <h2>Outdoor</h2>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+                <button class="button" type="button">Visit</button>
+            </div>
+        </section>
+
+        <footer id="shop">
+                <h1>SHOP PRODUCTS</h1>
+                <div id="categories">
+                    <a href="#">Antiperspirant & Deodorant</a href="#">
+                    <a href="#">Body Spray</a href="#">
+                    <a href="#">Body Wash & Bar</a href="#">
+                    <a href="#">Fragrance</a href="#">
+                    <a href="#">Shampoo</a href="#">
+                    <a href="#">Styling</a href="#">
+                </div>
+        </footer>
+    </main>
+    <!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,11 @@
+#Files
+
+*.psd
+*.json
+backgrounds_url
+
+#Folders
+
+fonts/
+node_modules/
+.vscode/
