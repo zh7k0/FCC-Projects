@@ -2,6 +2,7 @@
 
 *.psd
 *.json
+*.code-workspace
 backgrounds_url
 
 #Folders

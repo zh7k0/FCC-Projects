@@ -101,7 +101,7 @@ p {letter-spacing: .03125em;}
 
 #welcome-section {
     background-color: var(--secondary-color);
-    background-image: url("img/code_start.svg") , url("img/code_end.svg");
+    background-image: url("https://raw.githubusercontent.com/zh7k0/FCC-Projects/master/Responsive%20Web/img/code_start.svg?sanitize=true") , url("https://raw.githubusercontent.com/zh7k0/FCC-Projects/master/Responsive%20Web/img/code_end.svg?sanitize=true");
     background-repeat: no-repeat;
     background-position: center top, center 95%;
     background-size: 200px auto;
