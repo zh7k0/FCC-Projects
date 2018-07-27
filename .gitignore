@@ -1,1 +1,7 @@
+#Files
 *.code-workspace
+*.json
+
+#Folders
+node_modules/
+.vscode/
