@@ -1,3 +1,5 @@
 # Ignoring css files because they're only compiled versions
 # of Sass code
 css/
+node_modules/
+Designs/
